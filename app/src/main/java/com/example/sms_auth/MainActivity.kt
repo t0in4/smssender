@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS) !=
                 PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.SEND_SMS,
-            Manifest.permission.READ_SMS), 101)
+            Manifest.permission.READ_SMS, Manifest.permission.RECEIVE_SMS), 101)
 
         }
     }
